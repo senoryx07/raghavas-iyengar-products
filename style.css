@@ -19,6 +19,7 @@ body {
     padding: 20px 60px;
     border-bottom: 1px solid #eee;
     background: white;
+    flex-wrap: wrap;
 }
 
 .brand-area {
@@ -211,23 +212,52 @@ footer {
 
 /* ===== MOBILE RESPONSIVE ===== */
 @media (max-width: 768px) {
-    .top {
+
+    .top{
         flex-direction: column;
-        gap: 15px;
-        padding: 20px;
+        align-items: flex-start;
+        padding: 18px;
+        gap: 10px;
     }
 
-    nav {
-        display: flex;
-        gap: 15px;
-        flex-wrap: wrap;
+    .brand-area{
+        width: 100%;
     }
 
-    .product-block {
-        flex-direction: column;
+    nav{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+        margin-top: 10px;
     }
 
-    .product-block img {
-        width: 100% !important;
+    nav a{
+        background:#f5f5f5;
+        padding:10px;
+        border-radius:8px;
+        text-align:center;
+        margin-left:0;
+        font-weight:600;
     }
+}
+@media (max-width:768px){
+
+    section div[style*="grid-template-columns:1fr 1fr"]{
+        grid-template-columns:1fr !important;
+    }
+
+}
+@media (max-width:768px){
+
+.call-button{
+    bottom:15px;
+    right:15px;
+}
+
+.whatsapp-button{
+    bottom:75px;
+    right:15px;
+}
+
 }
