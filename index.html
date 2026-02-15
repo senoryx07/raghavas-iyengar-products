@@ -1,106 +1,177 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html>
 <head>
     <title>RAGHAVA'S AUTHENTIC IYENGAR PRODUCTS</title>
+
+    <!-- MOBILE IMPORTANT -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header class="top">
+
     <div class="brand-area">
         <img src="logo.png" class="logo">
+
         <div>
             <h1>RAGHAVA'S AUTHENTIC IYENGAR PRODUCTS</h1>
             <p class="tagline">Traditional Homemade Spice Powders</p>
         </div>
     </div>
 
-    <nav>
+    <!-- ⭐ HAMBURGER -->
+    <div class="hamburger" onclick="toggleMenu()">
+        ☰
+    </div>
+
+    <nav id="nav-menu">
         <a href="index.html">Home</a>
         <a href="products.html">Products</a>
         <a href="about.html">About</a>
         <a href="contacts.html">Contact</a>
     </nav>
+
 </header>
+
 
 <!-- HERO -->
 <section style="background:linear-gradient(to right,#7a0000,#b22222); color:white; padding:100px 30px;">
     <div style="max-width:1100px; margin:auto;">
-        <h1 style="font-size:52px;">Authentic Iyengar Style<br>Homemade Masalas</h1>
+
+        <h1 style="font-size:52px;">
+            Authentic Iyengar Style<br>Homemade Masalas
+        </h1>
+
         <p style="margin-top:20px; font-size:20px; max-width:720px;">
             Experience the purity of traditional recipes, handcrafted in small batches using carefully sourced ingredients for rich aroma and authentic taste.
         </p>
 
         <div style="margin-top:35px; display:flex; gap:20px; flex-wrap:wrap;">
             <a href="products.html" class="primary-btn">Explore Our Products</a>
-            <a href="https://wa.me/916363468983" target="_blank" class="whatsapp-main">💬 Order via WhatsApp</a>
+
+            <a href="https://wa.me/916363468983"
+               target="_blank"
+               class="whatsapp-main">
+               💬 Order via WhatsApp
+            </a>
         </div>
+
     </div>
 </section>
+
+
 
 <!-- TRUST BAR -->
 <section class="soft-bg" style="padding:60px 30px;">
     <div style="max-width:1100px; margin:auto; display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:25px; text-align:center;">
-        <div class="card"><h3>🌿 100% Natural</h3><p>No preservatives or artificial additives</p></div>
-        <div class="card"><h3>👩‍🍳 Homemade</h3><p>Prepared in small batches</p></div>
-        <div class="card"><h3>⭐ Authentic Taste</h3><p>Traditional Iyengar recipes</p></div>
-        <div class="card"><h3>📦 Hygienic Packing</h3><p>Sealed for freshness</p></div>
+
+        <div class="card">
+            <h3>🌿 100% Natural</h3>
+            <p>No preservatives or artificial additives</p>
+        </div>
+
+        <div class="card">
+            <h3>👩‍🍳 Homemade</h3>
+            <p>Prepared in small batches</p>
+        </div>
+
+        <div class="card">
+            <h3>⭐ Authentic Taste</h3>
+            <p>Traditional Iyengar recipes</p>
+        </div>
+
+        <div class="card">
+            <h3>📦 Hygienic Packing</h3>
+            <p>Sealed for freshness</p>
+        </div>
+
     </div>
 </section>
+
+
 
 <!-- INTRO -->
 <section style="padding:80px 30px;">
     <div style="max-width:1000px; margin:auto; text-align:center;">
-        <h2 style="font-size:40px; color:#8b0000;">Welcome to Our Kitchen</h2>
+
+        <h2 style="font-size:40px; color:#8b0000;">
+            Welcome to Our Kitchen
+        </h2>
+
         <p style="margin-top:25px; font-size:19px; color:#555;">
-            RAGHAVA'S AUTHENTIC IYENGAR PRODUCTS brings you the rich culinary heritage of traditional Iyengar kitchens.  
+            RAGHAVA'S AUTHENTIC IYENGAR PRODUCTS brings you the rich culinary heritage of traditional Iyengar kitchens.
             Every spice blend is handcrafted with patience, purity, and passion to bring you the taste of home in every meal.
         </p>
+
     </div>
 </section>
+
+
 
 <!-- FEATURED PRODUCTS -->
 <section class="soft-bg" style="padding:80px 30px;">
     <div style="max-width:1100px; margin:auto;">
-        <h2 style="font-size:38px; color:#8b0000;">Customer Favorites</h2>
+
+        <h2 style="font-size:38px; color:#8b0000;">
+            Customer Favorites
+        </h2>
 
         <div style="margin-top:40px; display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:30px;">
+
             <div class="card">
-                <div class="img-box"><img src="spices/bisibelebath.png"></div>
+                <div class="img-box">
+                    <img src="spices/bisibelebath.png">
+                </div>
                 <h3>Bisibele Bath Powder</h3>
                 <p>Traditional aromatic blend for authentic Karnataka-style meals.</p>
             </div>
 
             <div class="card">
-                <div class="img-box"><img src="spices/chutneypodi.png"></div>
+                <div class="img-box">
+                    <img src="spices/chutneypodi.png">
+                </div>
                 <h3>Chutney Pudi</h3>
                 <p>Perfect companion for idli, dosa and hot rice with ghee.</p>
             </div>
 
             <div class="card">
-                <div class="img-box"><img src="spices/sambarpodi.png"></div>
+                <div class="img-box">
+                    <img src="spices/sambarpodi.png">
+                </div>
                 <h3>Sambar Powder</h3>
                 <p>Authentic homemade flavor for everyday cooking.</p>
             </div>
 
             <div class="card">
-                <div class="img-box"><img src="spices/vangibath.png"></div>
+                <div class="img-box">
+                    <img src="spices/vangibath.png">
+                </div>
                 <h3>Vangi Bath Powder</h3>
                 <p>Special blend for rich and flavorful brinjal rice.</p>
             </div>
+
         </div>
 
         <div style="margin-top:50px;">
-            <a href="products.html" class="primary-btn">View Full Product Range</a>
+            <a href="products.html" class="primary-btn">
+                View Full Product Range
+            </a>
         </div>
+
     </div>
 </section>
+
+
 
 <!-- WHY US -->
 <section style="padding:80px 30px;">
     <div style="max-width:1100px; margin:auto;">
-        <h2 style="font-size:38px; color:#8b0000;">Why Choose Us?</h2>
+
+        <h2 style="font-size:38px; color:#8b0000;">
+            Why Choose Us?
+        </h2>
 
         <ul style="margin-top:30px; font-size:18px; color:#555; line-height:2;">
             <li>✔ Authentic Iyengar recipes passed through generations</li>
@@ -109,28 +180,60 @@
             <li>✔ Hygienic preparation in small batches</li>
             <li>✔ Trusted by families across South India</li>
         </ul>
+
     </div>
 </section>
 
+
+
 <!-- FINAL CTA -->
 <section style="background:linear-gradient(to right,#8b0000,#b22222); color:white; padding:90px 30px; text-align:center;">
-    <h2 style="font-size:44px;">Bring Authentic Taste to Your Kitchen</h2>
+
+    <h2 style="font-size:44px;">
+        Bring Authentic Taste to Your Kitchen
+    </h2>
+
     <p style="margin-top:20px; font-size:20px;">
         Discover our handcrafted spice blends and experience tradition in every meal.
     </p>
 
     <div style="margin-top:35px;">
-        <a href="products.html" class="primary-btn">Browse Products</a>
+        <a href="products.html" class="primary-btn">
+            Browse Products
+        </a>
     </div>
+
 </section>
+
+
 
 <footer>
     <p>© 2026 RAGHAVA'S AUTHENTIC IYENGAR PRODUCTS | Handmade with ❤️ in India</p>
 </footer>
 
+
+
 <!-- FLOATING BUTTONS -->
-<a href="https://wa.me/916363468983" target="_blank" class="whatsapp-button">💬 WhatsApp</a>
-<a href="tel:+916363468983" class="call-button">📞 Call Us</a>
+<a href="https://wa.me/916363468983"
+   target="_blank"
+   class="whatsapp-button">
+   💬 WhatsApp
+</a>
+
+<a href="tel:+916363468983"
+   class="call-button">
+   📞 Call Us
+</a>
+
+
+
+<!-- ⭐ HAMBURGER SCRIPT -->
+<script>
+function toggleMenu(){
+    document.getElementById("nav-menu").classList.toggle("active");
+}
+</script>
+
 
 </body>
 </html>
