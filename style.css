@@ -114,10 +114,10 @@ nav a:hover{
 
 .card{
     background:white;
-    padding:26px;
-    border-radius:16px;
+    padding:28px;
+    border-radius:20px;
     border:1px solid #f1f1f1;
-    box-shadow:0 8px 24px rgba(0,0,0,0.04);
+    box-shadow:0 10px 28px rgba(0,0,0,0.05);
     transition:0.3s;
 }
 
@@ -126,11 +126,30 @@ nav a:hover{
 }
 
 
-/* ================================= */
-/* ===== IMAGE SAFETY (HOMEPAGE FIX) */
-/* ================================= */
+/* Premium curved images inside cards */
 
-/* Prevent global image stretching */
+.card img{
+    width:100%;
+    aspect-ratio:1/1;
+    object-fit:cover;
+    border-radius:22px;
+    display:block;
+    margin-bottom:18px;
+}
+
+.card h3{
+    margin-top:8px;
+    margin-bottom:10px;
+}
+
+.card p{
+    margin-top:6px;
+}
+
+
+/* ================================= */
+/* ===== IMAGE SAFETY (GLOBAL) ====== */
+/* ================================= */
 
 img{
     max-width:100%;
@@ -166,9 +185,7 @@ img{
     box-shadow:0 18px 40px rgba(0,0,0,0.08);
 }
 
-
-/* ⭐⭐⭐ CRITICAL FIX — PRODUCTS ONLY */
-/* This prevents homepage images from breaking */
+/* PRODUCTS ONLY IMAGE CONTROL */
 
 .products-grid .product-card img{
     width:100%;
@@ -178,19 +195,29 @@ img{
     margin-bottom:18px;
 }
 
-
-/* TITLE SPACING */
-
 .product-card h3{
     color:#8b0000;
     margin-bottom:12px;
     margin-top:6px;
 }
 
-/* TEXT SPACING */
-
 .product-card p{
     margin-bottom:10px;
+}
+
+
+/* ================================= */
+/* ========= PREMIUM SECTION FIX ==== */
+/* ================================= */
+
+/* This targets ONLY your "Crafted with Tradition" section
+   without requiring HTML changes */
+
+section div[style*="grid-template-columns:1fr 1fr"]{
+    display:grid !important;
+    grid-template-columns:1fr 1fr !important;
+    gap:70px;
+    align-items:center;
 }
 
 
@@ -199,15 +226,15 @@ img{
 /* ================================= */
 
 .primary-btn{
-    background:white;              /* makes it visible on red hero */
-    color:#8b0000;                 /* brand color text */
+    background:white;
+    color:#8b0000;
     padding:14px 28px;
     border-radius:12px;
     text-decoration:none;
     font-weight:700;
     display:inline-block;
     transition:0.3s;
-    box-shadow:0 8px 22px rgba(0,0,0,0.15); /* premium lift */
+    box-shadow:0 8px 22px rgba(0,0,0,0.15);
 }
 
 .primary-btn:hover{
@@ -230,7 +257,7 @@ img{
 
 
 /* ================================= */
-/* ========= FOOTER (STICKY) ======= */
+/* ========= FOOTER ================= */
 /* ================================= */
 
 footer{
@@ -244,7 +271,7 @@ footer{
 
 
 /* ================================= */
-/* ========= FLOATING BUTTONS ====== */
+/* ========= FLOATING BUTTONS ======= */
 /* ================================= */
 
 .call-button{
@@ -286,16 +313,12 @@ footer{
     padding:18px;
 }
 
-/* hamburger */
-
 .hamburger{
     display:block;
     position:absolute;
     right:20px;
     top:22px;
 }
-
-/* nav */
 
 nav{
     width:100%;
@@ -316,20 +339,29 @@ nav a{
     margin-left:0;
 }
 
-/* ⭐ Single column products */
+/* Products -> single column */
 
 .products-grid{
     grid-template-columns:1fr;
     gap:28px;
 }
 
-/* smaller images */
-
 .products-grid .product-card img{
     height:220px;
 }
 
-/* floating buttons */
+/* ⭐⭐⭐ PREMIUM SECTION MOBILE FIX ⭐⭐⭐ */
+
+section div[style*="grid-template-columns:1fr 1fr"]{
+    grid-template-columns:1fr !important;
+    gap:40px !important;
+}
+
+section div[style*="grid-template-columns:1fr 1fr"] img{
+    margin-bottom:10px;
+}
+
+/* Floating buttons */
 
 .call-button{
     bottom:15px;
@@ -341,34 +373,4 @@ nav a{
     right:15px;
 }
 
-}
-/* ================================= */
-/* ===== FEATURED HOME FIX ========= */
-/* ================================= */
-
-/* More breathing space inside cards */
-.card{
-    padding:28px;
-    border-radius:20px;
-}
-
-/* Curved premium images */
-.card img{
-    width:100%;
-    aspect-ratio:1 / 1;   /* ⭐ makes it PERFECT square */
-    object-fit:cover;
-    border-radius:22px;   /* ⭐ premium curvature */
-    display:block;
-    margin-bottom:18px;
-}
-
-/* Space between image & title */
-.card h3{
-    margin-top:8px;
-    margin-bottom:10px;
-}
-
-/* Slightly softer paragraph spacing */
-.card p{
-    margin-top:6px;
 }
